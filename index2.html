@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>IOT</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+                    <a class="navbar-brand" href="#"> <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                        Bootstrap   </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About</a>
+                        </li> -->
+                      </ul>
+                      <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <!-- Content Row -->
+                    <div class="row">
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 1 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 2 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 3 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 4 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 2 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 3 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> System 4 </div>
+                                            <hr>
+                                            <div class="mb-2"> Temperature: <b>60</b> <b>°C</b></div>
+                                            <div class="mb-2"> Humidity: <b>60</b> <b>g/m³</b></div>
+                                            <div class="mb-2"> Height above sea level: <b>60°C</b> <b></b></div>
+                                            <div class="mb-2"> Actual height: <b>60</b> <b></b></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content Row -->
+                        
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 100%;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">System </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <!-- Area Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <button type="button" class="btn btn-primary" onclick="updateLabel('Temperature')" >Temperature</button>
+                                        <button type="button" class="btn btn-secondary" onclick="updateLabel('Humidity')" >Humidity</button>
+                                        <button type="button" class="btn btn-secondary" onclick="updateLabel('Height above sea level')" >Height above sea level</button>
+                                        <button type="button" class="btn btn-secondary" onclick="updateLabel('Actual height')" >Actual height</button>
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <!-- <canvas id="myAreaChart"></canvas> -->
+                                        <canvas id="myChart1"
+                                            style="height: 400px!important; display: block; box-sizing: border-box; width: 1564px;"
+                                            width="1564" height="400px"></canvas>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper 365 323 -->
+    </div>
+
+
+    <script>
+        var x1 = [
+            '12:30',
+            '12:31',
+            '12:32',
+            '12:33',
+            '12:34',
+            '12:35',
+            '12:36'
+        ]
+        var y1 = [10000, 50, 0, 60, 90, 890, 542, 6];
+        var y2 = [10, 50, 10, 610, 290, 890, 542, 5];
+        var y3 = [1, 50, 220, 640, 970, 890, 42, 4];
+        var y4 = [];
+        var labelBtn = "Temperature";
+        let myChart1;
+        // Khởi tạo biểu đồ
+        function createChart() {
+            const dataMyChart1 = {
+                labels: x1,
+                datasets: [
+                    {
+                        label: labelBtn+" 1",
+                        backgroundColor: "rgb(255, 99, 132)",
+                        borderColor: "rgb(255, 99, 132)",
+                        data: y1,
+                        tension: 0.3
+                    },
+                    {
+                        label: labelBtn+" 2",
+                        backgroundColor: "rgb(205, 0, 255)",
+                        borderColor: "rgb(205, 0, 255)",
+                        data: y2,
+                        tension: 0.3
+                    },
+                    {
+                        label: labelBtn+" 3",
+                        backgroundColor: "rgb(17, 144, 225)",
+                        borderColor: "rgb(17, 144, 225)",
+                        data: y3,
+                        tension: 0.3
+                    },
+                    {
+                        label: labelBtn+" 4",
+                        backgroundColor: "rgb(129, 255, 17)",
+                        borderColor: "rgb(129, 255, 17)",
+                        data: y4,
+                        tension: 0.3
+                    },
+                ],
+            };
+            const configMyChart1 = {
+                type: 'line',
+                data: dataMyChart1
+            }
+            myChart1 = new Chart(document.getElementById("myChart1"), configMyChart1);
+        }
+        function updateLabel(newLabel) {
+                labelBtn = newLabel;
+                var count = 1
+                myChart1.data.datasets.forEach((dataset) => {
+                    dataset.label = labelBtn + " " + count++;
+                    console.log(dataset.label);
+                });
+                myChart1.update();
+                var buttons = document.getElementsByTagName("button");
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove("active");
+                    buttons[i].classList.replace("btn-primary", "btn-secondary");
+                }
+                
+                // Thêm class "active" và thay đổi class từ "btn-secondary" sang "btn-primary" cho button được bấm
+                event.target.classList.add("active");
+                event.target.classList.replace("btn-secondary", "btn-primary");
+            }
+        // Cập nhật dữ liệu y4 sau mỗi 10 giây
+        setInterval(() => {
+            myChart1.data.datasets[0].data = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
+            myChart1.data.datasets[1].data = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
+            myChart1.data.datasets[2].data = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
+            myChart1.data.datasets[3].data = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
+            myChart1.update();
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var currentTime = hours + ':' + minutes;
+            x1.push(currentTime);
+            if (x1.length > 5) {
+                x1.shift();
+            }
+        }, 10000);
+
+        // Gọi hàm khởi tạo biểu đồ khi trang web được tải lên
+        createChart();
+    </script>
+</body>
+
+</html>
